@@ -4,5 +4,78 @@
     </head>
     <body>
         <h1>Hello!</h1>
+        <input type="number" placeholder="Enter A" id="A" />
+        <input type="number" placeholder="Enter B" id="B" />
+        <button id="add-btn">Add</button>
+        <button id="sub-btn">SUBTRACT</button>
+        <button id="mul-btn">MULTIPLY</button>
+        <button id="div-btn">DIVIDE</button>
+        <br>
+        <br>
+        <input type="text" placeholder="Do Something" id="task" />
+        <button id="Add-btn">ADD</button>
+        <ol id="list">
+
+        </ol>
+        <p id="P"></p>
     </body>
+    <script>
+        var btn1 = document.getElementById("add-btn");
+        var a = document.getElementById("A");
+        var b = document.getElementById("B");
+        var p = document.getElementById("P");
+        function exception(sum)
+        {
+            if(a.value == "" || b.value == "" )
+            {
+                p.innerHTML="Please Insert Value First";
+            }
+            else{
+                p.innerHTML=sum;
+            }
+        }
+       
+        btn1.onclick = function()
+        {
+            var sum  = parseInt( a.value ) +parseInt( b.value );
+            p.innerHTML = sum;
+            exception();
+            
+        }
+        var btn2 = document.getElementById("sub-btn");
+        btn2.onclick = function()
+        {
+            var sum  = parseInt( a.value ) - parseInt( b.value );
+           exception(sum);
+        }
+        var btn3 = document.getElementById("mul-btn");
+        btn3.onclick = function()
+        {
+            var sum  = parseInt( a.value ) * parseInt( b.value );
+            //p.innerHTML = sum;
+            exception(sum);
+        }
+        var btn4 = document.getElementById("div-btn");
+        btn4.onclick = function()
+        {
+            var sum  = parseInt( a.value ) / parseInt( b.value );
+           // p.innerHTML = sum;
+            exception(sum);
+        }
+        //manikwalia43@gmail.com
+        var addtask = document.getElementById("Add-btn");
+        var task_value = document.getElementById("task");
+            
+        var parent = document.getElementById("list");
+        addtask.onclick = function()
+        {
+            var node  = document.createElement("li");
+            
+            node.innerHTML = task_value.value;
+            parent.appendChild(node);
+            task_value.value="";
+        }
+       
+
+    </script>
 </html>

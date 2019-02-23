@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>TO DO List</title>
+      <style>
+          #Add-btn
+          {
+              background: greenyellow;
+              color: red;
+              border: 2px solid blue;
+              border-radius: 25px;
+              padding:15px;
+            font-size: 25px;
+           height:60px;
+           width: 60px
+          }
+          #task
+          {
+              border: 1px solid blue;
+              color: red;
+            background: white;
+            border-radius: 25px;
+            height: 20px;
+
+            padding:6px;
+            padding-left: 15px;
+            width:80%;
+          }
+        
+      </style>
+
+</head>
+<body>
+        <input type="text" placeholder="Do Something" id="task" />
+        <button id="Add-btn">+</button>
+        <ol id="list">
+
+        </ol>
+        <p id="P"></p>
+</body>
+<script>
+    var idcounter = 0;
+  var addtask = document.getElementById("Add-btn");
+        var task_value = document.getElementById("task");
+        var parent = document.getElementById("list");
+        task_value.onkeyup = function(event)
+        {
+           // console.log(event);
+            if(event.keyCode == 13)
+            {
+                var node  = document.createElement("li");
+                var buttondel = document.createElement("button");
+                buttondel.innerHTML="X";
+                node.innerHTML = task_value.value;
+                node.setAttribute("class","li");
+                node.setAttribute("style","background:#fff000; padding:10px;border: 1px solid blue;text-size:40px;border-radius:25px;margin:2px");
+                buttondel.setAttribute("style","float:right;border-radius:25px");
+                buttondel.setAttribute("id",idcounter);
+                buttondel.setAttribute("onclick","del(this,id);");
+                idcounter++;
+                node.style.color  =  "red";
+                parent.appendChild(node);
+                node.appendChild(buttondel);
+                task_value.value="";
+             }
+        }
+        addtask.onclick = function()
+        {
+            var node  = document.createElement("li");
+            var buttondel = document.createElement("button");
+            buttondel.innerHTML="X";
+            node.innerHTML = task_value.value;
+                node.setAttribute("class","li");
+                node.setAttribute("style","background:#fff000; padding:10px;border: 1px solid blue;text-size:40px;border-radius:25px;margin:2px");
+                buttondel.setAttribute("style","float:right;border-radius:25px");
+                buttondel.setAttribute("id",idcounter);
+                node.setAttribute("id",idcounter);
+                buttondel.setAttribute("onclick","del()");
+                idcounter++;
+                node.style.color  =  "red";
+                parent.appendChild(node);
+                node.appendChild(buttondel);
+                task_value.value="";
+        }
+        function del(x)
+        {
+            parent.removeChild(x);
+        }
+       
+</script>
+
+</html>
