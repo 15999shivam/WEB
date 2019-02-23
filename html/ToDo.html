@@ -56,7 +56,9 @@
                 node.setAttribute("style","background:#fff000; padding:10px;border: 1px solid blue;text-size:40px;border-radius:25px;margin:2px");
                 buttondel.setAttribute("style","float:right;border-radius:25px");
                 buttondel.setAttribute("id",idcounter);
-                buttondel.setAttribute("onclick","del(this,id);");
+                idcounter++;
+                node.setAttribute("id",idcounter);
+                buttondel.setAttribute("onclick","del(id)");
                 idcounter++;
                 node.style.color  =  "red";
                 parent.appendChild(node);
@@ -74,8 +76,9 @@
                 node.setAttribute("style","background:#fff000; padding:10px;border: 1px solid blue;text-size:40px;border-radius:25px;margin:2px");
                 buttondel.setAttribute("style","float:right;border-radius:25px");
                 buttondel.setAttribute("id",idcounter);
+                idcounter++;
                 node.setAttribute("id",idcounter);
-                buttondel.setAttribute("onclick","del()");
+                buttondel.setAttribute("onclick","del(id)");
                 idcounter++;
                 node.style.color  =  "red";
                 parent.appendChild(node);
@@ -84,7 +87,11 @@
         }
         function del(x)
         {
-            parent.removeChild(x);
+            console.log(x);
+            x++;
+           var a = document.getElementById(x);
+           console.log(a);
+           parent.removeChild(a);
         }
        
 </script>
