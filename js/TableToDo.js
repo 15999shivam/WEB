@@ -1,4 +1,6 @@
-//to do with table
+
+
+      //to do with table
       var id = 0;
       var sn = 1;
       var table = document.getElementById("table");
@@ -10,7 +12,7 @@
         var td1 = document.createElement("td");
         var td2 = document.createElement("td");
         var td3  = document.createElement("td");
-        var td4  = document.createElement("td");
+        var td4 = document.createElement("td");
         var delb = document.createElement("Button");
 
         td1.innerHTML = sn;
@@ -27,17 +29,20 @@
 
         td3.appendChild(delb);
 
-        td4.innerHTML = new Date(),toString();
+        td4.innerHTML = new Date().toString();
 
         tr1.appendChild(td1);
         tr1.appendChild(td2);
         tr1.appendChild(td3);
         tr1.appendChild(td4);
-        
+
         tr1.setAttribute("id",id);
         id++;
         table.appendChild(tr1);
     
+        
+
+
       });
 
       function del(id1)
@@ -62,7 +67,17 @@
                 temp.innerHTML = val-1;
               }
              console.log("this is id:"+id);
+            
+              /*switch(t)
+              {
+                  case 1:
+
+                  break;
+                  case 2:
+                  break;
+                  case 3:
+                  break;
+              }*/
+          }
           id=id-3;
       }
-    }
-
