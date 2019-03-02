@@ -3,54 +3,17 @@
 <head>
     <title>Workshops</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/swiper.css" />
-    <link rel="stylesheet" href="css/test1.css"/>
 </head>
-<body>
+<body onload="slider()">
     <ul>
         <li  id = "1"  onclick="del(id)">
-            
-                <div class="swiper-container" >
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide" ><div class="imgbx">
-                                <img src="pics/Technovation-300x300.jpg">
-                            </div></div>
-                          
-                          
-                        </div>
-                        <!-- Add Pagination -->
-                        <div class="swiper-pagination"></div>
-                      </div>
             <div class="content">
                 <h2>HACKON</h2>
                 <p>ACM student Chapter Chitkara University organized two days workshop on #Ethical_Hacking and #Information_Security in association with learncodeonline.in . The resource person for the workshop was Co-founder of learncodeonline.in Mr Saksham Choudhary who is world's renowned #Cyber-Security Researcher and very famous Youtuber . In this workshop students participated with great interest and they get hands-on on the topics like #Social_Attacks , #CCTV_Attacks , #BurpSuite , #SQL_Injection , #Web-cam_Hacking and many more . After completing the workshop students got certification as well for #Cyber_Security_Expert Level-1 and some goodies too.</p>
             </div>
+            <img src="#" id="slideshow" height="100%" width="100%" />
         </li>
         <li id = "2"  onclick="del(id)">
-            <div style="float:none">
-                <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide" >
-                              <div class="imgbx">
-                                <img src="pics/aws1.PNG" class="img-responsive">
-                            </div>
-                          </div>
-                          <div class="swiper-slide" >
-                              <div class="imgbx">
-                                <img src="pics/aws2.PNG" class="img-responsive">
-                            </div>
-                          </div>
-                          <div class="swiper-slide" >
-                              <div class="imgbx">
-                                <img src="pics/aws3.PNG" class="img-responsive">
-                            </div>
-                          </div>
-                        </div>
-                        <!-- Add Pagination -->
-                        <div class="swiper-pagination"></div>
-                 </div>
-            </div>
             <div class="content">
                 <h2>WORKSHOP ON AMAZON WEB SERVICES</h2>
                 <p>One another successful event has come to an end!!!!
@@ -63,23 +26,9 @@
                         
                         Hope tou all have enjoyed the workshop and we'll get you all again in our next event which will be coming soon.</p>
             </div>
+            <img src="#" id="slideshow1" height="100%" width="100%" />
         </li>
         <li id = "3"  onclick="del(id)">
-
-                <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide" ><div class="imgbx">
-                                <img src="pics/IMG-20180328-WA0000-212x300.jpg" width="100%">
-                            </div></div>
-                          <div class="swiper-slide" ><div class="imgbx">
-                                <img src="pics/IMG-20180327-WA0003-300x225.jpg">
-                            </div></div>
-                          
-                          
-                        </div>
-                        <!-- Add Pagination -->
-                        <div class="swiper-pagination"></div>
-                      </div>
             <div class="content">
                 <h2>WORKSHOP ON APP DEVELOPMENT</h2>
                 <p>ACM student Chapter, Chitkara University in collaboration with Google Education organized its six days workshop on ‘App Development’. 22 students participated in the workshop.
@@ -94,20 +43,9 @@
                         
                         Under the guidance of Mr Saravjeet the workshop was organised by the students of acm society Shalvi Saxena and Hitesh Bansal.</p>
             </div>
+            <img src="#" id="slideshow2" height="100%" width="100%" />
         </li>
         <li id = "4"  onclick="del(id)">
-                <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide" ><div class="imgbx">
-                                <img src="pics/1-300x200.jpg">
-                            </div></div>
-                          
-                          
-                          
-                        </div>
-                        <!-- Add Pagination -->
-                        <div class="swiper-pagination"></div>
-                      </div>
             <div class="content">
                 <h2>FACULTY DEVELOPMENT PROGRAM</h2>
                 <p>ACM Student chapter, Department of Computer Science, has organized a 6 Days( 18th June -23rd June) Faculty development program in an association with Codechef ( A Directi Company)
@@ -118,47 +56,19 @@
                         
                         * Full day lecture consist of 3 hours theory and 3 practical sessions.</p>
             </div>
+            <img src="#" id="slideshow3" height="100%" width="100%" />
         </li>
         <li id = "5"  onclick="del(id)">
-                <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide" ><div class="imgbx">
-                                <img src="pics/Technovation-300x300.jpg">
-                            </div></div>
-                          
-                          
-                        </div>
-                        <!-- Add Pagination -->
-                        <div class="swiper-pagination"></div>
-                      </div>
             <div class="content">
                 <h2>TECHNOVATION</h2>
                 <p>ACM Student Chapter Chitkara University organized an event Technovation in which Third year students of BE CSE displayed their Integrated Projects in different categories. The event started with the arrival of highly reputed Externals from various domains ranging from academicians to corporate world. Venues were embellished with Poster Presentations. The students showcased their Projects. The evaluations of students were highly appreciated by the examiners. Date: May 26, 2017</p>
             </div>
+            <img src="#" id="slideshow4" height="100%" width="100%" />
         </li>
         
     </ul>
 </body>
 <script type="text/javascript" src="js/script.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/swiper.min.js"></script>
-     <script>
-    var swiper = new Swiper('.swiper-container', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows : true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
-  </script>
+
+    
 </html>

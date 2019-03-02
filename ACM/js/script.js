@@ -7,7 +7,7 @@ var previd=null;
 function del(id)
 {
     if(previd!=null)
-    li[previd].children[1].classList.remove('hover');
+    li[previd].children[0].classList.remove('hover');
     previd = id-1;
   for(var i=0;i<5;i++)
   {
@@ -15,5 +15,38 @@ function del(id)
   }
   id--;
   li[id].style.width = "80%";
-  li[id].children[1].classList.add('hover');
+  li[id].children[0].classList.add('hover');
+}
+var i = 0;
+function change_image(){
+var img = document.getElementById('slideshow');
+img.src = "./pics/"+(i++%6+1)+".jpg";
+}
+var i1=0;
+var i2=0;
+var i3=0;
+var i4=0;
+function change_image1(){
+    var img = document.getElementById('slideshow1');
+    img.src = "./pics/aws"+(i1++%3+1)+".png";
+    }
+    function change_image2(){
+        var img = document.getElementById('slideshow2');
+        img.src = "./pics/app"+(i2++%2+1)+".jpg";
+        }
+        function change_image3(){
+            var img = document.getElementById('slideshow3');
+            img.src = "./pics/fclty"+(i3++%1+1)+".jpg";
+            }
+            function change_image4(){
+                var img = document.getElementById('slideshow4');
+                img.src = "./pics/tech"+(i4++%1+1)+".jpg";
+                }
+function slider()
+{
+    setInterval(change_image,1500);
+    setInterval(change_image1,1500);
+    setInterval(change_image2,1500);
+    setInterval(change_image3,1500);
+    setInterval(change_image4,1500);
 }
