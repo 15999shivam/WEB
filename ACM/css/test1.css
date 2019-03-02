@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+      
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: auto;
+      height:5%;
+	  background:#fff;   
+	   }
+	 .text
+	 {
+		 font-size:20px;
+		 text-align:center;
+		 padding:1%;
+		 
+		 background-repeat:no-repeat;
+		 background-size:cover;
+		 
+	 }
+	 @media only screen and (max-width: 900px) {
+    .swiper-slide {
+       background-position: center;
+      background-size: cover;
+      width: 250px;
+      height:5%;
+	  background:#fff;   
+    }
+}
