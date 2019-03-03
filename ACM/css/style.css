@@ -65,3 +65,15 @@ ul li .hover
     opacity: 1;
 }
 
+.event
+{
+    position: relative;
+    top:5%;
+    left: 15%;
+    writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-align: center;
+  font-size:large;
+  letter-spacing: 10px;
+  color: #fff;
+}

@@ -4,6 +4,7 @@ var ul = document.getElementsByTagName("ul");
 console.log(li);
 console.log(ul);
 var previd=null;
+
 function del(id)
 {
     if(previd!=null)
@@ -11,11 +12,19 @@ function del(id)
     previd = id-1;
   for(var i=0;i<5;i++)
   {
+    var k = parseInt((Math.random()*1000)%255);
+    var l = parseInt((Math.random()*1000)%255);
+    var m = parseInt((Math.random()*1000)%255);
       li[i].style.width = "5%";
+      li[i].children[2].style.display = "block";
+      li[i].style.background = ` rgb( ${k},${l},${m})`;
+      li[i].children[1].style.display = "none";
   }
   id--;
   li[id].style.width = "80%";
   li[id].children[0].classList.add('hover');
+  li[id].children[2].style.display = "none";
+  li[id].children[1].style.display = "block";
 }
 var i = 0;
 function change_image(){
