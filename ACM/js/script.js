@@ -41,7 +41,7 @@ function change_image1(){
             function change_image4(){
                 var img = document.getElementById('slideshow4');
                 img.src = "./pics/tech"+(i4++%1+1)+".jpg";
-                }//aniket
+                }
 function slider()
 {
     setInterval(change_image,1500);
