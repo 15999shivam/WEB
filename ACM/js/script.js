@@ -20,7 +20,7 @@ function del(id)
 var i = 0;
 function change_image(){
 var img = document.getElementById('slideshow');
-img.src = "./pics/"+(i++%6+1)+".jpg";
+img.src = "./pics/"+(i++%6+1)+".JPG";
 }
 var i1=0;
 var i2=0;
@@ -28,7 +28,7 @@ var i3=0;
 var i4=0;
 function change_image1(){
     var img = document.getElementById('slideshow1');
-    img.src = "./pics/aws"+(i1++%3+1)+".png";
+    img.src = "./pics/aws"+(i1++%3+1)+".PNG";
     }
     function change_image2(){
         var img = document.getElementById('slideshow2');
@@ -41,7 +41,7 @@ function change_image1(){
             function change_image4(){
                 var img = document.getElementById('slideshow4');
                 img.src = "./pics/tech"+(i4++%1+1)+".jpg";
-                }
+                }//aniket
 function slider()
 {
     setInterval(change_image,1500);
