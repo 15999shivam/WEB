@@ -101,6 +101,7 @@ img{
 #clickme
 {
     position:absolute;
+    top:10vh;
     height: 90vh;
     width:100%;
     z-index: 100;
