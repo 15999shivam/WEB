@@ -21,10 +21,15 @@ function del(id)
       li[i].children[1].style.display = "none";
       li[i].children[2].classList.add('eventClick');
       li[i].children[2].classList.remove('event');
+      
   }
   id--;
   li[id].style.width = "80%";
   li[id].children[0].classList.add('hover');
+  if(screen.height<800)
+      {
+        li[id].children[0].style.fontSize="20px"
+      }
   li[id].children[2].style.display = "none";
   li[id].children[1].style.display = "block";
 }
@@ -105,6 +110,8 @@ function slider()
     setInterval(change_image2,1500);
     setInterval(change_image3,1500);
     setInterval(change_image4,1500);
+    console.log(screen.width);
+    console.log(screen.height);
 }
 var msg = document.getElementById("msg");
 console.log(msg);
