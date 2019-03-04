@@ -106,3 +106,10 @@ function slider()
     setInterval(change_image3,1500);
     setInterval(change_image4,1500);
 }
+var msg = document.getElementById("msg");
+console.log(msg);
+
+msg.addEventListener("click", function()
+{ 
+ msg.style.display="none";
+});
