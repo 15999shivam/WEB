@@ -112,4 +112,5 @@ console.log(msg);
 msg.addEventListener("click", function()
 { 
  msg.style.display="none";
+ del(3);
 });

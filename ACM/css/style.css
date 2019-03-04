@@ -78,6 +78,7 @@ ul li .hover
   font-size:large;
   letter-spacing: 4px;
   color: #fff;
+  font-weight: bold;
 }
 .eventClick
 {
@@ -90,6 +91,7 @@ ul li .hover
   font-size:large;
   letter-spacing: 4px;
   color: #fff;
+  font-weight: bold;
 }
 
 img{
@@ -113,4 +115,13 @@ img{
     z-index: 1000;
     color: white;
     font-size: xx-large;
+}
+#nav1
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width:100%;
+    background: #343A40;
 }
