@@ -7,7 +7,7 @@
         <h1>Hello!</h1>
         <input type="number" placeholder="Enter A" id="A" />
         <input type="number" placeholder="Enter B" id="B" />
-        <button id="add-btn">Add</button>
+        <button id="addition-btn">Add</button>
         <button id="sub-btn">SUBTRACT</button>
         <button id="mul-btn">MULTIPLY</button>
         <button id="div-btn">DIVIDE</button>
@@ -22,7 +22,7 @@
     </body>
     <script src="../js/Script.js" ></script>
     <script>
-        var btn1 = document.getElementById("add-btn");
+        var btn1 = document.getElementById("addition-btn");
         var a = document.getElementById("A");
         var b = document.getElementById("B");
         var p = document.getElementById("P");
@@ -40,8 +40,8 @@
         btn1.onclick = function()
         {
             var sum  = parseInt( a.value ) +parseInt( b.value );
-            p.innerHTML = sum;
-            exception();
+           // p.innerHTML = sum;
+            exception(sum);
             
         }
         var btn2 = document.getElementById("sub-btn");
